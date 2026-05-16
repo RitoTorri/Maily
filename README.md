@@ -5,7 +5,7 @@
 ## 🚀 Tecnologías
 
 <p align="center">
-    <img src="https://skillicons.dev/icons?i=javascript,express,nodejs,gmail" height="50" />
+    <img src="https://skillicons.dev/icons?i=javascript,express,nodejs,gmail,docker" height="50" />
     <img src="https://cdn.simpleicons.org/swagger/85EA2D" height="50" width="50" />
 </p>
 
