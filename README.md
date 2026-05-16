@@ -85,6 +85,6 @@ Una vez que la aplicación esté en ejecución:
 
 Si encuentras algún error o tienes sugerencias de mejora, por favor abre un **issue** en el repositorio oficial.
 
-Desarrollado con 💻 por Jesús Cortez - Barquisimeto, Venezuela.
-[Mi Github](https://github.com/RitoTorri)
+Desarrollado con 💻 por Jesús Cortez - Barquisimeto, Venezuela.  
+[Mi Github](https://github.com/RitoTorri)  
 [Mi Portfolio](https://cortez-porfolio.netlify.app/)
