@@ -1,0 +1,17 @@
+services:
+  maily-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: maily_prod
+    ports:
+      - "${PORT:-3000}:3000"
+    env_file:
+      - .env
+    restart: always
+    # Límites de recursos para que no se coma toda la PC-MAMALONA
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 512M

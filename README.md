@@ -5,7 +5,7 @@
 ## 🚀 Tecnologías
 
 <p align="center">
-    <img src="https://skillicons.dev/icons?i=javascript,express,nodejs,gmail" height="50" />
+    <img src="https://skillicons.dev/icons?i=javascript,express,nodejs,gmail,docker" height="50" />
     <img src="https://cdn.simpleicons.org/swagger/85EA2D" height="50" width="50" />
 </p>
 
@@ -48,6 +48,17 @@ Para que la API envíe correos en tu nombre usando Gmail, **no debes usar tu con
 7. Copia ese código y pégalo en tu archivo `.env` en la variable `EMAIL_PASS`.
 
 ---
+
+## 🐋 Ejecución en Docker
+
+```bash
+# Construir imagen
+docker compose build
+
+# Ejecutar contenedor
+docker compose up
+
+```
 
 ## 🖥️ Ejecución Local
 
