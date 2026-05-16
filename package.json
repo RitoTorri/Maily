@@ -1,0 +1,34 @@
+{
+  "name": "maily",
+  "version": "1.0.0",
+  "description": "API REST para enviar correos electrónicos",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Cortez Jesus",
+    "email": "cortezfrancisco025@gmail.com",
+    "url": "https://cortez-porfolio.netlify.app/"
+  },
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.5.2",
+    "express-validator": "^7.3.2",
+    "nodemailer": "^8.0.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "morgan": "^1.10.1",
+    "nodemon": "^3.1.14"
+  }
+}
