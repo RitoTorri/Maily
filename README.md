@@ -1,6 +1,6 @@
 # 📧 Maily - Email Service API
 
-**Maily** es una API robusta y minimalista construida con Node.js y Express diseñada para gestionar el envío de correos electrónicos de forma eficiente. Ideal para integraciones en microservicios o sistemas de notificaciones.
+**Maily** es una APIREST robusta construida con Node.js y Express diseñada para el envío de correos electrónicos de forma eficiente. Ideal para integraciones en microservicios o sistemas de notificaciones.
 
 ## 🚀 Tecnologías
 
