@@ -39,4 +39,8 @@ const router = Router();
  */
 router.post("/", registerValidator, senderController.sendEmail);
 
+router.get("/test", (req, res) => {
+  res.json({ message: "La API está funcionando correctamente en producción" });
+});
+
 export default router;

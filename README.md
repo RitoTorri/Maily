@@ -34,6 +34,7 @@ Renombra el archivo `.env.example` a `.env` y completa los valores:
 | `EMAIL_USERNAME` | Nombre visible del remitente | `Soporte Técnico` |
 | `EMAIL_SENDER` | Tu dirección de Gmail | `tuusuario@gmail.com` |
 | `EMAIL_PASS` | App Password de 16 caracteres | `abcd efgh ijkl mnop` |
+| `MODE` | Define el entorno de ejecucion de la API | `development` o `production` |
 
 ---
 

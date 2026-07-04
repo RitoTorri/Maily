@@ -2,10 +2,10 @@
 import express from "express";
 import cors from "cors";
 import rateLimit from "express-rate-limit";
-import morgan from "morgan";
 import dotenv from "dotenv";
 import swaggerUi from "swagger-ui-express";
 import { swaggerSpec } from "./docs/swagger.js";
+import morgan from "morgan";
 
 // Importación de rutas
 import senderRouter from "./modules/users/sender.route.js";
@@ -13,7 +13,7 @@ import senderRouter from "./modules/users/sender.route.js";
 // Configuración de variables de entorno
 dotenv.config();
 
-class App {
+export class App {
   // Atributos
   app;
   port;
@@ -21,7 +21,9 @@ class App {
   // Inicializacion de atributos
   constructor() {
     this.app = new express();
-    this.port = process.env.PORT || 3000;
+    if (process.env.MODE === "development") {
+      this.port = process.env.PORT || 3000;
+    }
     this.middlewares();
     this.urls = {
       sender: `/sender`,
@@ -40,10 +42,13 @@ class App {
           "Too many requests from this IP, please try again in 15 minutes",
       }),
     );
+    this.app.use(express.urlencoded({ extended: true }));
     this.app.use(morgan("dev"));
 
     // Swagger UI
-    this.app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+    if (process.env.MODE === "development") {
+      this.app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+    }
   };
 
   routes = () => {
@@ -57,5 +62,3 @@ class App {
     });
   };
 }
-
-export default new App();
