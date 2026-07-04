@@ -23,8 +23,8 @@ export class SenderServices {
 
       const info = await transporter.sendMail(emailOptions);
 
-      console.log("✅ ¡CORREO ENVIADO!");
-      console.log("🆔 ID del mensaje:", info.messageId);
+      console.log("¡CORREO ENVIADO!");
+      console.log("ID del mensaje:", info.messageId);
       console.log(
         "📬 Revisa tu bandeja de entrada (o la carpeta de Spam por si acaso).",
       );
