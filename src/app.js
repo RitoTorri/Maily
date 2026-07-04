@@ -13,7 +13,7 @@ import senderRouter from "./modules/users/sender.route.js";
 // Configuración de variables de entorno
 dotenv.config();
 
-export class App {
+class App {
   // Atributos
   app;
   port;
@@ -62,3 +62,13 @@ export class App {
     });
   };
 }
+
+// Comenta esto si la aplicaicon se ejecuta en desarrollo
+const appInstance = new App();
+export default appInstance.app;
+
+// descomenta esto si la aplicaicon se ejecuta en desarrollo
+/*
+const appInstance = new App();
+export default appInstance;
+*/

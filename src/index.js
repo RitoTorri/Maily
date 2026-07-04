@@ -1,10 +1,9 @@
-import dotenv from "dotenv";
-import { App } from "./app.js";
-dotenv.config();
-const appInstance = new App();
+// COmenta esto si la aplicaicon se ejecuta en desarrollo
+import App from "./app.js";
+export default App;
 
-if (process.env.MODE === "development") {
-  appInstance.start();
-}
-
-export default appInstance.app;
+// descomenta esto si la aplicaicon se ejecuta en desarrollo
+/*
+import app from "./app.js";
+app.start();
+*/
